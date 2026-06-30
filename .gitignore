@@ -7,8 +7,6 @@ data/
 *.html
 *.png
 *.zip
-# README images under docs/ are the PNGs we do track:
-!docs/*.png
 
 # Python
 __pycache__/

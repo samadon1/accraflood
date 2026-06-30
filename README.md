@@ -2,8 +2,6 @@
 
 Terrain-derived drainage and building-encroachment detection for Accra, Ghana.
 
-![accraflood: encroachment density across Greater Accra, and flagged Open Buildings footprints in the Old Fadama / Odaw corridor](docs/hero.png)
-
 ## The idea
 
 Accra's flooding is pluvial: rain overwhelms drains that are clogged or paved over. The
@@ -92,8 +90,6 @@ accraflood validate --method sar --event-start 2026-06-28 --event-end 2026-07-06
 
 `accraflood run` produces one combined, toggleable HTML map: natural drainage, encroacher
 density, and the highest-risk flagged buildings (coloured by score and by first-appearance year).
-
-![Combined map for the Odaw test area: drainage, encroacher density heatmap, and flagged building footprints](docs/combined_map.png)
 
 ## How it is validated
 
