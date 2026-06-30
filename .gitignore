@@ -5,6 +5,8 @@ data/
 *.parquet
 *.geojson
 *.html
+# The published maps under docs/ are the HTML we do track (GitHub Pages):
+!docs/*.html
 *.png
 *.zip
 
