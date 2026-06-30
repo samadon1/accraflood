@@ -1,0 +1,27 @@
+name: accraflood
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  # Geospatial core (GDAL-backed; conda-forge ships prebuilt binaries)
+  - geopandas
+  - rasterio
+  - shapely
+  - pyproj
+  - fiona
+  - numpy
+  - scipy
+  - pyarrow            # GeoParquet I/O
+  # Hydrology
+  - richdem            # backup flow-routing; whitebox pulls its own binary via pip
+  # Mapping / EE glue
+  - folium
+  # pip-only deps
+  - pip
+  - pip:
+      - earthengine-api
+      - geemap
+      - leafmap
+      - whitebox
+      - typer
+      - rich

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "accraflood"
+version = "0.1.0"
+description = "Terrain-derived drainage & building-encroachment detection for Accra"
+requires-python = ">=3.11"
+dependencies = [
+    "earthengine-api",
+    "geemap",
+    "leafmap",
+    "geopandas",
+    "rasterio",
+    "shapely",
+    "pyproj",
+    "numpy",
+    "scipy",
+    "pyarrow",
+    "whitebox",
+    "richdem",
+    "folium",
+    "typer",
+    "rich",
+]
+
+[project.scripts]
+accraflood = "accraflood.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]

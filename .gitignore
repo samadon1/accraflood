@@ -1,0 +1,34 @@
+# Data cache: rasters, vectors, maps, downloads. All regenerated from Earth Engine / OSM.
+data/
+*.tif
+*.tiff
+*.parquet
+*.geojson
+*.html
+*.png
+*.zip
+# README images under docs/ are the PNGs we do track:
+!docs/*.png
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+
+# WhiteboxTools runtime binary and temp files (legacy; richdem is the hydrology backend now)
+WBT/
+*.dep
+
+# Secrets / local config (keep .env.example, ignore the real .env)
+.env
+
+# Editor and OS
+.DS_Store
+.idea/
+.vscode/
+.ipynb_checkpoints/
